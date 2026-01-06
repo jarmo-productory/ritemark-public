@@ -27,7 +27,7 @@ Ritemark combines a WYSIWYG markdown editor with an integrated terminal, so you 
 
 ## Download
 
-**[Download for macOS (Apple Silicon)](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/Ritemark.dmg)**
+**[Download for macOS (Apple Silicon)](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/RiteMark-1.94.0-darwin-arm64.dmg)**
 
 - **Platform:** macOS (Apple Silicon)
 - **Price:** Free

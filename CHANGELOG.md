@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.0] - 2026-01-XX
+## [1.94.0] - 2026-01-06
 
 ### Added
 - Initial public release
@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Built-in terminal for AI assistants (Claude Code, Codex, Gemini CLI, etc.)
 - File explorer sidebar
 - macOS native app (Apple Silicon)
-- Keyboard shortcut `Cmd+\`` to toggle terminal
+- Keyboard shortcut `Cmd+`` to toggle terminal
 - Auto-save functionality
 - Support for tables, images, code blocks, and all standard markdown
 
@@ -26,5 +26,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[Unreleased]: https://github.com/jarmo-productory/ritemark-public/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/jarmo-productory/ritemark-public/releases/tag/v1.0.0
+[Unreleased]: https://github.com/jarmo-productory/ritemark-public/compare/v1.94.0...HEAD
+[1.94.0]: https://github.com/jarmo-productory/ritemark-public/releases/tag/v1.94.0
