@@ -1,96 +1,130 @@
 # Ritemark
 
-**A markdown editor with a built-in terminal.** Open a file, see beautifully formatted text, and your AI is right there ready to help.
+**A writing app with AI agents built in.**
 
-[![Download](https://img.shields.io/badge/Download-macOS-blue?style=for-the-badge&logo=apple)](https://github.com/jarmo-productory/ritemark-public/releases/latest)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+Ritemark is a markdown editor where Claude, Codex, and Gemini work alongside you. Chat with agents visually. They read your files, edit them, create new ones. You stay in control.
 
-![Ritemark Screenshot](assets/screenshot.webp)
+![Ritemark editor with slash command menu and AI sidebar](docs/screenshots/v1.6.1/1-6-1-editor-slash-command.png)
 
----
+`Visual agent chat` · `No technical skills needed` · `Free & open source`
 
-## What is Ritemark?
-
-Ritemark combines a WYSIWYG markdown editor with an integrated terminal, so you can write documents while your AI assistant (Claude Code, Codex, Gemini CLI, etc.) reads and edits your files directly.
-
-**No more copy-paste between ChatGPT and your documents.**
-
-| Traditional workflow | Ritemark |
-|---------------------|----------|
-| Copy text from document | Write directly |
-| Paste into ChatGPT | AI is right there, working with your files |
-| Wait for response | See changes in real-time |
-| Copy response back | File saves automatically |
-| Paste into document | Done |
-
----
+* * *
 
 ## Download
 
-**[Download for macOS (Apple Silicon)](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/RiteMark-1.94.0-darwin-arm64.dmg)**
+**Latest: v1.6.1** — May 2026
 
-- **Platform:** macOS (Apple Silicon)
-- **Price:** Free
-- **License:** MIT (Open Source)
+| Platform | Download |
+| --- | --- |
+| macOS Apple Silicon (M1/M2/M3) | [Ritemark-arm64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/Ritemark-arm64.dmg) |
+| macOS Intel | [Ritemark-x64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/Ritemark-x64.dmg) |
+| Windows | Coming soon — will be added as a follow-up asset on the [v1.6.1 release](https://github.com/jarmo-productory/ritemark-public/releases/latest) |
 
----
+All builds are signed and notarized. See [release notes](https://github.com/jarmo-productory/ritemark-public/releases/latest) for checksums and full changelog.
+
+[Read more about Ritemark](https://www.ritemark.app)
+
+* * *
+
+## The shift
+
+AI agents can work on your documents now. Not just code.
+
+If you're a product manager, consultant, founder, or technical writer, AI agents can transform your workflow. They draft from real project context. Rewrite across multiple files. Translate entire folders. The same agents that developers use for code can now help you write, restructure, and translate documents.
+
+Until now, the tools that run these agents required a terminal. Ritemark changes that. You chat with Claude, Codex, or Gemini visually. No command line, no setup complexity. The agent sees your project files and works with them directly. You write in a visual editor, give directions in plain language, and review every change before it's saved.
+
+* * *
+
+## How Ritemark works
+
+**One window. Three panes. Zero context switching.** You write in the center. The agent assists on the right. Your files stay on your drive.
+
+![Settings showing both Claude and ChatGPT signed in via the unified browser flow](docs/screenshots/v1.6.1/1-6-1-codex-claude-login-settings.png)
+
+* * *
 
 ## Features
 
-### See beautiful text, not code
-Markdown renders as formatted text. Tables, images, headings — all beautiful. No `# ## ** []` syntax in your face.
+### Editor
 
-### AI reads and edits directly
-Terminal built into the app. Your AI sees the file, makes changes, saves. You just review and approve.
+Visual markdown editing with live preview. Write formatted text, not syntax. Standard `.md` files that any tool reads. Slash commands for headings, lists, tables, code blocks, images, and diagrams. Native Mermaid with a toolbar for copy, download, and full-screen expand. Voice dictation in 50+ languages — fully on-device.
 
-### Everything stays on your computer
-No cloud. No account. Your files are plain `.md` files on your hard drive. Works offline.
+![Mermaid diagram with the Copy / Download / Expand toolbar](docs/screenshots/v1.6.1/1-6-1-mermaid-diagram-action-buttons.png)
 
-### Free and simple
-Download, open a file, start writing. No signup, no subscription, no hidden fees.
+### AI agents
 
----
+Three agents in one sidebar. Sign in via browser — no terminal, no CLI install. Switch providers with a dropdown — no lock-in. Plan mode, interactive questions, and full file context built in. Full CLI terminal also built in if you want it.
 
-## How it works
+### Local-first
 
-1. **Open your document** — Plain markdown files. No import, no conversion.
-2. **Press `Cmd+\``** — Terminal appears. Your AI already has context.
-3. **AI reads, edits, saves** — Changes appear live. You review and approve.
+Files on your hard drive. No cloud, no account, no sync. Full offline support — AI features need their own API connection, but the editor works without it. Your data stays yours.
 
----
+### Data files
+
+Native support for CSV. View and edit structured data alongside your prose.
+
+### Flows
+
+Chain AI operations into repeatable workflows. Build templates for common writing tasks and run them with one click.
+
+* * *
 
 ## Who is it for?
 
-- **Knowledge workers** — Who write documents, specs, blog posts
-- **AI terminal users** — Claude Code, Codex, Gemini CLI — same workflow for text
-- **Markdown enthusiasts** — Who want a native desktop app with WYSIWYG view
-- **Privacy-conscious writers** — Who don't want cloud-only tools
+You don't need to code to use AI agents. Product managers, founders, technical writers, and consultants are already using Ritemark to work with AI agents on their real files.
 
----
+-   **Product Managers** — PRDs, specs, roadmaps. Agents pull context from your project files and help you iterate faster.
+    
+-   **Founders & Executives** — Strategy docs, investor updates, competitive analysis. The agent reads everything in the folder and drafts from real context.
+    
+-   **Technical Writers** — Documentation, API guides, knowledge bases. Agents restructure, translate, and expand drafts without losing formatting.
+    
+-   **Consultants** — Client reports, proposals, deliverables. Compile multiple source files into polished outputs.
+    
+
+* * *
+
+## Open source & local-first
+
+**Your files. Your rules.** Ritemark is open source and local-first. Your documents are plain markdown files on your hard drive. No cloud sync, no vendor lock-in, no account required. The code is on GitHub for anyone to inspect.
+
+-   **Plain markdown files** — Standard `.md` format. Open them in any editor, any time.
+    
+-   **Works offline** — No internet needed to write. AI features need their own API connection.
+    
+-   **No account, no tracking** — Download and start writing. We don't know who you are and we like it that way.
+    
+-   **Source on GitHub** — Read the code, report issues, contribute. Transparency is the default.
+    
+
+* * *
 
 ## Built by
 
-**[Jarmo Tuisk](https://productory.ee/en/team/jarmo-tuisk)** @ **[Productory](https://productory.ee)** — Estonia's leading AI trainer.
+[**Jarmo Tuisk**](https://www.linkedin.com/in/jarmotuisk/) and [**Productory**](https://productory.eu) — an AI training and consulting company based in Estonia.
 
-I used Claude Code every day for coding. I wanted the same experience for writing. That's how Ritemark was born.
+We've trained 9000+ professionals and worked with 200+ companies on practical AI adoption. Ritemark is the editor we wanted for ourselves: AI-native, local-first, and genuinely pleasant to write in.
 
-- 9000+ people trained in AI
-- 200+ companies
+Learn more at [ritemark.app](https://ritemark.app).
 
----
+* * *
 
 ## Support
 
-- **Bug reports:** [Open an issue](https://github.com/jarmo-productory/ritemark-public/issues/new?template=bug_report.md)
-- **Feature requests:** [Open an issue](https://github.com/jarmo-productory/ritemark-public/issues/new?template=feature_request.md)
-- **Website:** [ritemark.productory.ee](https://productory.ee/ritemark)
+-   **Bug reports:** [Open an issue](https://github.com/jarmo-productory/ritemark-public/issues/new?template=bug_report.md)
+    
+-   **Feature requests:** [Open an issue](https://github.com/jarmo-productory/ritemark-public/issues/new?template=feature_request.md)
+    
+-   **Releases:** [GitHub Releases](https://github.com/jarmo-productory/ritemark-public/releases)
+    
 
----
+* * *
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT. Use it, fork it, ship it.
 
----
+* * *
 
-*Made with care in Estonia.*
+Made in Estonia.
