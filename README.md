@@ -4,7 +4,7 @@
 
 Ritemark is a markdown editor where Claude, Codex, and Gemini work alongside you. Chat with agents visually. They read your files, edit them, create new ones. You stay in control.
 
-![Ritemark editor with slash command menu and AI sidebar](docs/screenshots/v1.6.1/1-6-1-editor-slash-command.png)
+![](./images/1-6-0-agent-management-fullscreen.png)
 
 `Visual agent chat` · `No technical skills needed` · `Free & open source`
 
@@ -40,8 +40,6 @@ Until now, the tools that run these agents required a terminal. Ritemark changes
 
 **One window. Three panes. Zero context switching.** You write in the center. The agent assists on the right. Your files stay on your drive.
 
-![Settings showing both Claude and ChatGPT signed in via the unified browser flow](docs/screenshots/v1.6.1/1-6-1-codex-claude-login-settings.png)
-
 * * *
 
 ## Features
@@ -50,7 +48,7 @@ Until now, the tools that run these agents required a terminal. Ritemark changes
 
 Visual markdown editing with live preview. Write formatted text, not syntax. Standard `.md` files that any tool reads. Slash commands for headings, lists, tables, code blocks, images, and diagrams. Native Mermaid with a toolbar for copy, download, and full-screen expand. Voice dictation in 50+ languages — fully on-device.
 
-![Mermaid diagram with the Copy / Download / Expand toolbar](docs/screenshots/v1.6.1/1-6-1-mermaid-diagram-action-buttons.png)
+![](./images/1-6-1-editor-slash-command.png)
 
 ### AI agents
 
