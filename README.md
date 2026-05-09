@@ -18,7 +18,7 @@ Ritemark is a markdown editor where Claude, Codex, and Gemini work alongside you
 | --- | --- |
 | macOS Apple Silicon (M1/M2/M3) | [Ritemark-arm64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/Ritemark-arm64.dmg) |
 | macOS Intel | [Ritemark-x64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/Ritemark-x64.dmg) |
-| Windows | Coming soon — will be added as a follow-up asset on the [v1.6.1 release](https://github.com/jarmo-productory/ritemark-public/releases/latest) |
+| Windows | [Ritemark-Setup.exe](https://github.com/jarmo-productory/ritemark-public/releases/download/v1.6.3/Ritemark-Setup.exe) |
 
 All builds are signed and notarized. See [release notes](https://github.com/jarmo-productory/ritemark-public/releases/latest) for checksums and full changelog.
 
@@ -47,6 +47,8 @@ Until now, the tools that run these agents required a terminal. Ritemark changes
 ### Editor
 
 Visual markdown editing with live preview. Write formatted text, not syntax. Standard `.md` files that any tool reads. Slash commands for headings, lists, tables, code blocks, images, and diagrams. Native Mermaid with a toolbar for copy, download, and full-screen expand. Voice dictation in 50+ languages — fully on-device.
+
+*Screenshot of "/ commands" in editor*
 
 ![](./images/1-6-1-editor-slash-command.png)
 
@@ -125,4 +127,4 @@ MIT. Use it, fork it, ship it.
 
 * * *
 
-Made in Estonia.
+Made in Estonia
