@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-01T00:00:00Z",
+  "updatedAt": "2026-07-25T09:30:00Z",
   "providers": {
     "anthropic": {
       "defaults": {
@@ -16,12 +16,20 @@
           "order": 0
         },
         {
-          "id": "claude-opus-4-8",
-          "label": "Opus 4.8",
+          "id": "claude-opus-5",
+          "label": "Opus 5",
           "description": "Most powerful Opus-tier",
           "tier": "high",
           "deprecated": false,
           "order": 1
+        },
+        {
+          "id": "claude-opus-4-8",
+          "label": "Opus 4.8",
+          "description": "Previous Opus generation",
+          "tier": "high",
+          "deprecated": false,
+          "order": 2
         },
         {
           "id": "claude-fable-5",
@@ -29,7 +37,7 @@
           "description": "Most capable, long-horizon work",
           "tier": "high",
           "deprecated": false,
-          "order": 2
+          "order": 3
         },
         {
           "id": "claude-haiku-4-5-20251001",
@@ -37,7 +45,7 @@
           "description": "Quick & light",
           "tier": "low",
           "deprecated": false,
-          "order": 3
+          "order": 4
         }
       ]
     },
@@ -226,12 +234,20 @@
           "order": 5
         },
         {
-          "id": "anthropic/claude-opus-4-8",
-          "label": "Claude Opus 4.8",
+          "id": "anthropic/claude-opus-5",
+          "label": "Claude Opus 5",
           "description": "Anthropic — most powerful",
           "tier": "high",
           "deprecated": false,
           "order": 6
+        },
+        {
+          "id": "anthropic/claude-opus-4-8",
+          "label": "Claude Opus 4.8",
+          "description": "Anthropic — previous Opus generation",
+          "tier": "high",
+          "deprecated": false,
+          "order": 7
         },
         {
           "id": "openrouter/anthropic/claude-sonnet-5",
@@ -239,7 +255,7 @@
           "description": "OpenRouter — Anthropic via OpenRouter",
           "tier": "medium",
           "deprecated": false,
-          "order": 7
+          "order": 8
         },
         {
           "id": "openrouter/google/gemini-3.1-pro-preview",
@@ -247,7 +263,7 @@
           "description": "OpenRouter — Google via OpenRouter",
           "tier": "high",
           "deprecated": false,
-          "order": 8
+          "order": 9
         },
         {
           "id": "openrouter/openai/gpt-5.2",
@@ -255,7 +271,7 @@
           "description": "OpenRouter — OpenAI via OpenRouter",
           "tier": "high",
           "deprecated": false,
-          "order": 9
+          "order": 10
         },
         {
           "id": "openrouter/meta-llama/llama-3.3-70b-instruct",
@@ -263,7 +279,7 @@
           "description": "OpenRouter — open-weight, low cost",
           "tier": "low",
           "deprecated": false,
-          "order": 10
+          "order": 11
         }
       ]
     }
