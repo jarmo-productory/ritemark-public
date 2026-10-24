@@ -235,6 +235,16 @@
       },
       "models": [
         {
+          "id": "gemini-4-argon",
+          "label": "Gemini 4 Argon",
+          "description": "Google's flagship reasoning model",
+          "tier": "high",
+          "deprecated": false,
+          "order": -1,
+          "provenance": "curated",
+          "addedAt": "2026-10-24T10:58:08Z"
+        },
+        {
           "id": "gemini-3.1-pro-preview",
           "label": "Gemini 3.1 Pro",
           "description": "Most capable Gemini with reasoning",
@@ -437,6 +447,17 @@
     "opencode": {
       "defaults": {},
       "models": [
+        {
+          "id": "google/gemini-4-argon",
+          "label": "Gemini 4 Argon",
+          "description": "Google — flagship reasoning",
+          "tier": "high",
+          "deprecated": false,
+          "order": -1,
+          "minAppVersion": "2.0.0",
+          "provenance": "curated",
+          "addedAt": "2026-10-24T10:58:08Z"
+        },
         {
           "id": "google/gemini-3.1-pro-preview",
           "label": "Gemini 3.1 Pro",
