@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T17:45:33Z",
+  "updatedAt": "2026-10-27T20:40:35Z",
   "providers": {
     "anthropic": {
       "defaults": {
-        "claude-code": "claude-sonnet-5"
+        "claude-code": "claude-sonnet-5-5"
       },
       "models": [
         {
-          "id": "claude-sonnet-5",
-          "label": "Sonnet 5",
+          "id": "claude-sonnet-5-5",
+          "label": "Sonnet 5.5",
           "description": "Fast & capable (recommended)",
           "tier": "medium",
           "deprecated": false,
@@ -22,26 +22,7 @@
               "xhigh",
               "max"
             ]
-          }
-        },
-        {
-          "id": "claude-sonnet-5-5",
-          "label": "Sonnet 5.5",
-          "description": "Newest Sonnet model",
-          "tier": "medium",
-          "deprecated": false,
-          "order": 0.5,
-          "thinkingEffort": {
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ]
           },
-          "provenance": "curated",
-          "addedAt": "2026-09-29T17:45:33Z",
           "claudeCode": {
             "inject": true,
             "maxOutputTokens": 64000
@@ -65,12 +46,29 @@
           }
         },
         {
+          "id": "claude-sonnet-5",
+          "label": "Sonnet 5",
+          "description": "Previous Sonnet model",
+          "tier": "medium",
+          "deprecated": false,
+          "order": 2,
+          "thinkingEffort": {
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        },
+        {
           "id": "claude-opus-5",
           "label": "Opus 5",
           "description": "Previous Opus model",
           "tier": "high",
           "deprecated": false,
-          "order": 2,
+          "order": 3,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -87,7 +85,7 @@
           "description": "Current long-horizon model",
           "tier": "high",
           "deprecated": false,
-          "order": 3,
+          "order": 4,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -101,10 +99,10 @@
         {
           "id": "claude-opus-4-8",
           "label": "Opus 4.8",
-          "description": "Older Opus generation",
+          "description": "Retained for saved selections",
           "tier": "high",
-          "deprecated": false,
-          "order": 4,
+          "deprecated": true,
+          "order": 5,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -121,7 +119,7 @@
           "description": "Previous Fable generation",
           "tier": "high",
           "deprecated": false,
-          "order": 5,
+          "order": 6,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -133,12 +131,30 @@
           }
         },
         {
-          "id": "claude-haiku-4-5-20251001",
-          "label": "Haiku 4.5",
+          "id": "claude-haiku-5-5",
+          "label": "Haiku 5.5",
           "description": "Quick & light",
           "tier": "low",
           "deprecated": false,
-          "order": 6
+          "order": 7,
+          "thinkingEffort": {
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          },
+          "minAppVersion": "1.14.0"
+        },
+        {
+          "id": "claude-haiku-4-5-20251001",
+          "label": "Haiku 4.5",
+          "description": "Retained for saved selections",
+          "tier": "low",
+          "deprecated": true,
+          "order": 8
         }
       ]
     },
@@ -231,7 +247,7 @@
     },
     "gemini": {
       "defaults": {
-        "flow-llm": "gemini-2.5-flash"
+        "flow-llm": "gemini-3.5-flash-lite"
       },
       "models": [
         {
@@ -240,9 +256,7 @@
           "description": "Google's flagship reasoning model",
           "tier": "high",
           "deprecated": false,
-          "order": -1,
-          "provenance": "curated",
-          "addedAt": "2026-10-24T10:58:08Z"
+          "order": 0
         },
         {
           "id": "gemini-3.1-pro-preview",
@@ -250,7 +264,7 @@
           "description": "Most capable Gemini with reasoning",
           "tier": "high",
           "deprecated": false,
-          "order": 0
+          "order": 1
         },
         {
           "id": "gemini-3.8-flash",
@@ -258,7 +272,7 @@
           "description": "Current fast Gemini model",
           "tier": "medium",
           "deprecated": false,
-          "order": 1
+          "order": 2
         },
         {
           "id": "gemini-3.5-flash-lite",
@@ -266,46 +280,66 @@
           "description": "Current low-cost Gemini model",
           "tier": "low",
           "deprecated": false,
-          "order": 2
+          "order": 3
         },
         {
           "id": "gemini-2.5-pro",
           "label": "Gemini 2.5 Pro",
-          "description": "Powerful, complex tasks",
+          "description": "Retained for saved selections",
           "tier": "high",
-          "deprecated": false,
-          "order": 3
+          "deprecated": true,
+          "order": 4
         },
         {
           "id": "gemini-2.5-flash",
           "label": "Gemini 2.5 Flash",
-          "description": "Fast and efficient (stable)",
+          "description": "Retained for saved selections",
           "tier": "low",
-          "deprecated": false,
-          "order": 4
+          "deprecated": true,
+          "order": 5
         },
         {
           "id": "gemini-2.5-flash-lite",
           "label": "Gemini 2.5 Flash Lite",
-          "description": "Cheapest Gemini 2.5 model",
+          "description": "Retained for saved selections",
           "tier": "low",
-          "deprecated": false,
-          "order": 5
+          "deprecated": true,
+          "order": 6
         }
       ]
     },
     "codex": {
       "defaults": {
-        "codex": "gpt-5.6-sol"
+        "codex": "gpt-6.1-sol"
       },
       "models": [
         {
-          "id": "gpt-6-astra",
-          "label": "GPT-6 Astra",
-          "description": "Most capable Codex model",
+          "id": "gpt-6.1-sol",
+          "label": "GPT-6.1 Sol",
+          "description": "Latest agentic workhorse (recommended)",
           "tier": "high",
           "deprecated": false,
           "order": 0,
+          "thinkingEffort": {
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max",
+              "ultra"
+            ],
+            "defaultLevel": "low"
+          },
+          "minAppVersion": "1.14.0"
+        },
+        {
+          "id": "gpt-6-astra",
+          "label": "GPT-6 Astra",
+          "description": "Most capable model",
+          "tier": "high",
+          "deprecated": false,
+          "order": 1,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -321,10 +355,10 @@
         {
           "id": "gpt-5.6-sol",
           "label": "GPT-5.6 Sol",
-          "description": "Reliable agentic workhorse",
+          "description": "Previous agentic workhorse",
           "tier": "high",
           "deprecated": false,
-          "order": 1,
+          "order": 2,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -343,7 +377,7 @@
           "description": "Balanced",
           "tier": "medium",
           "deprecated": false,
-          "order": 2,
+          "order": 3,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -362,7 +396,7 @@
           "description": "Fast & light",
           "tier": "low",
           "deprecated": false,
-          "order": 3,
+          "order": 4,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -380,7 +414,7 @@
           "description": "Previous flagship agentic model",
           "tier": "high",
           "deprecated": false,
-          "order": 4,
+          "order": 5,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -397,7 +431,7 @@
           "description": "Fast coding-focused model",
           "tier": "low",
           "deprecated": false,
-          "order": 5,
+          "order": 6,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -414,7 +448,7 @@
           "description": "Retained for saved selections",
           "tier": "medium",
           "deprecated": true,
-          "order": 6,
+          "order": 7,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -431,7 +465,7 @@
           "description": "Retained for saved selections",
           "tier": "low",
           "deprecated": true,
-          "order": 7,
+          "order": 8,
           "thinkingEffort": {
             "levels": [
               "low",
@@ -448,15 +482,21 @@
       "defaults": {},
       "models": [
         {
+          "id": "google/gemini-3.8-flash",
+          "label": "Gemini 3.8 Flash",
+          "description": "Google — current fast model",
+          "tier": "medium",
+          "deprecated": false,
+          "order": 0
+        },
+        {
           "id": "google/gemini-4-argon",
           "label": "Gemini 4 Argon",
           "description": "Google — flagship reasoning",
           "tier": "high",
           "deprecated": false,
-          "order": -1,
-          "minAppVersion": "2.0.0",
-          "provenance": "curated",
-          "addedAt": "2026-10-24T10:58:08Z"
+          "order": 1,
+          "minAppVersion": "2.0.0"
         },
         {
           "id": "google/gemini-3.1-pro-preview",
@@ -464,15 +504,7 @@
           "description": "Google — most capable, deep reasoning",
           "tier": "high",
           "deprecated": false,
-          "order": 0
-        },
-        {
-          "id": "google/gemini-3.8-flash",
-          "label": "Gemini 3.8 Flash",
-          "description": "Google — current fast model",
-          "tier": "medium",
-          "deprecated": false,
-          "order": 1
+          "order": 2
         },
         {
           "id": "google/gemini-3.5-flash-lite",
@@ -480,15 +512,24 @@
           "description": "Google — current low-cost model",
           "tier": "low",
           "deprecated": false,
-          "order": 2
+          "order": 3
         },
         {
           "id": "google/gemini-2.5-pro",
           "label": "Gemini 2.5 Pro",
-          "description": "Google — proven, large context",
+          "description": "Retained for saved selections",
+          "tier": "high",
+          "deprecated": true,
+          "order": 4
+        },
+        {
+          "id": "openai/gpt-6.1-sol",
+          "label": "GPT-6.1 Sol",
+          "description": "OpenAI — latest agentic workhorse",
           "tier": "high",
           "deprecated": false,
-          "order": 3
+          "order": 5,
+          "minAppVersion": "2.0.0"
         },
         {
           "id": "openai/gpt-6-astra",
@@ -496,7 +537,7 @@
           "description": "OpenAI — most capable",
           "tier": "high",
           "deprecated": false,
-          "order": 4
+          "order": 6
         },
         {
           "id": "openai/gpt-5.6-sol",
@@ -504,7 +545,7 @@
           "description": "OpenAI — reliable agentic model",
           "tier": "high",
           "deprecated": false,
-          "order": 5
+          "order": 7
         },
         {
           "id": "openai/gpt-5.6-terra",
@@ -512,7 +553,7 @@
           "description": "OpenAI — balanced agentic model",
           "tier": "medium",
           "deprecated": false,
-          "order": 6
+          "order": 8
         },
         {
           "id": "openai/gpt-5.6-luna",
@@ -520,7 +561,7 @@
           "description": "OpenAI — fast agentic model",
           "tier": "low",
           "deprecated": false,
-          "order": 7
+          "order": 9
         },
         {
           "id": "openai/gpt-5.2",
@@ -528,7 +569,7 @@
           "description": "OpenAI — stable reasoning model",
           "tier": "high",
           "deprecated": false,
-          "order": 8
+          "order": 10
         },
         {
           "id": "openai/gpt-4o",
@@ -536,23 +577,50 @@
           "description": "OpenAI — fast multimodal generalist",
           "tier": "medium",
           "deprecated": false,
-          "order": 9
+          "order": 11
+        },
+        {
+          "id": "anthropic/claude-sonnet-5-5",
+          "label": "Claude Sonnet 5.5",
+          "description": "Anthropic — fast & capable",
+          "tier": "medium",
+          "deprecated": false,
+          "order": 12,
+          "minAppVersion": "2.0.0"
+        },
+        {
+          "id": "anthropic/claude-opus-5-5",
+          "label": "Claude Opus 5.5",
+          "description": "Anthropic — most capable",
+          "tier": "high",
+          "deprecated": false,
+          "order": 13,
+          "minAppVersion": "2.0.0"
+        },
+        {
+          "id": "anthropic/claude-haiku-5-5",
+          "label": "Claude Haiku 5.5",
+          "description": "Anthropic — quick & light",
+          "tier": "low",
+          "deprecated": false,
+          "order": 14,
+          "minAppVersion": "2.0.0"
         },
         {
           "id": "anthropic/claude-sonnet-5",
           "label": "Claude Sonnet 5",
-          "description": "Anthropic — fast & capable",
+          "description": "Anthropic — previous Sonnet",
           "tier": "medium",
           "deprecated": false,
-          "order": 10
+          "order": 15
         },
         {
           "id": "anthropic/claude-opus-5",
           "label": "Claude Opus 5",
-          "description": "Anthropic — most powerful",
+          "description": "Anthropic — previous Opus",
           "tier": "high",
           "deprecated": false,
-          "order": 11
+          "order": 16
         },
         {
           "id": "anthropic/claude-opus-4-8",
@@ -560,7 +628,25 @@
           "description": "Anthropic — previous Opus generation",
           "tier": "high",
           "deprecated": false,
-          "order": 12
+          "order": 17
+        },
+        {
+          "id": "openrouter/google/gemini-4-argon",
+          "label": "Gemini 4 Argon",
+          "description": "OpenRouter — Google via OpenRouter",
+          "tier": "high",
+          "deprecated": false,
+          "order": 18,
+          "minAppVersion": "2.0.0"
+        },
+        {
+          "id": "openrouter/anthropic/claude-sonnet-5.5",
+          "label": "Claude Sonnet 5.5",
+          "description": "OpenRouter — Anthropic via OpenRouter",
+          "tier": "medium",
+          "deprecated": false,
+          "order": 19,
+          "minAppVersion": "2.0.0"
         },
         {
           "id": "openrouter/anthropic/claude-sonnet-5",
@@ -568,7 +654,16 @@
           "description": "OpenRouter — Anthropic via OpenRouter",
           "tier": "medium",
           "deprecated": false,
-          "order": 13
+          "order": 20
+        },
+        {
+          "id": "openrouter/openai/gpt-6.1-sol",
+          "label": "GPT-6.1 Sol",
+          "description": "OpenRouter — OpenAI via OpenRouter",
+          "tier": "high",
+          "deprecated": false,
+          "order": 21,
+          "minAppVersion": "2.0.0"
         },
         {
           "id": "openrouter/google/gemini-3.1-pro-preview",
@@ -576,7 +671,7 @@
           "description": "OpenRouter — Google via OpenRouter",
           "tier": "high",
           "deprecated": false,
-          "order": 14
+          "order": 22
         },
         {
           "id": "openrouter/google/gemini-3.8-flash",
@@ -584,7 +679,7 @@
           "description": "OpenRouter — Google via OpenRouter",
           "tier": "medium",
           "deprecated": false,
-          "order": 15
+          "order": 23
         },
         {
           "id": "openrouter/openai/gpt-6-astra",
@@ -592,7 +687,7 @@
           "description": "OpenRouter — OpenAI via OpenRouter",
           "tier": "high",
           "deprecated": false,
-          "order": 16
+          "order": 24
         },
         {
           "id": "openrouter/openai/gpt-5.6-sol",
@@ -600,7 +695,7 @@
           "description": "OpenRouter — OpenAI via OpenRouter",
           "tier": "high",
           "deprecated": false,
-          "order": 17
+          "order": 25
         },
         {
           "id": "openrouter/openai/gpt-5.6-terra",
@@ -608,7 +703,7 @@
           "description": "OpenRouter — OpenAI via OpenRouter",
           "tier": "medium",
           "deprecated": false,
-          "order": 18
+          "order": 26
         },
         {
           "id": "openrouter/openai/gpt-5.6-luna",
@@ -616,7 +711,7 @@
           "description": "OpenRouter — OpenAI via OpenRouter",
           "tier": "low",
           "deprecated": false,
-          "order": 19
+          "order": 27
         },
         {
           "id": "openrouter/openai/gpt-5.2",
@@ -624,7 +719,7 @@
           "description": "OpenRouter — OpenAI via OpenRouter",
           "tier": "high",
           "deprecated": false,
-          "order": 20
+          "order": 28
         },
         {
           "id": "openrouter/meta-llama/llama-3.3-70b-instruct",
@@ -632,7 +727,7 @@
           "description": "OpenRouter — open-weight, low cost",
           "tier": "low",
           "deprecated": false,
-          "order": 21
+          "order": 29
         }
       ]
     }
