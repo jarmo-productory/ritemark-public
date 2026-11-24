@@ -1,130 +1,69 @@
-# Ritemark
+<p align="center">
+  <a href="https://ritemark.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="images/readme/ritemark-logo-on-dark.svg">
+      <img src="images/readme/ritemark-logo-on-light.svg" alt="Ritemark" width="280">
+    </picture>
+  </a>
+</p>
 
-**A writing app with AI agents built in.**
+<p align="center"><strong>Ritemark turns a folder on your computer into a workspace where ChatGPT or Claude work with you.</strong></p>
 
-Ritemark is a markdown editor where Claude, Codex, and Gemini work alongside you. Chat with agents visually. They read your files, edit them, create new ones. You stay in control.
+<p align="center">
+  <a href="https://github.com/jarmo-productory/ritemark-public/releases/tag/v2.3.0"><img src="https://img.shields.io/badge/version-2.3.0-1e2a4a" alt="Version 2.3.0"></a>
+  <img src="https://img.shields.io/badge/Mac%20and%20Windows-1e2a4a" alt="Mac and Windows">
+  <a href="https://github.com/ProductoryHQ/ritemark-native/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-1e2a4a" alt="MIT licence"></a>
+</p>
 
-![](./images/1-6-0-agent-management-fullscreen.png)
+<p align="center">
+  <a href="https://ritemark.app">Website</a> ·
+  <a href="#download">Download</a> ·
+  <a href="https://github.com/jarmo-productory/ritemark-public/releases/tag/v2.3.0">What's new in 2.3</a> ·
+  <a href="https://github.com/ProductoryHQ/ritemark-native">Source code</a>
+</p>
 
-`Visual agent chat` · `No technical skills needed` · `Free & open source`
+![Ritemark 2.3 with a deck open: the slide and its handout on the desk, the project's files on the left, and Claude's answer beside it after it added the slide](images/readme/ritemark-2.3-deck-hero.jpg)
 
-* * *
+This repository holds Ritemark's installers and release notes. The source code is in [ProductoryHQ/ritemark-native](https://github.com/ProductoryHQ/ritemark-native).
 
 ## Download
 
-**Latest: v1.6.1** — May 2026
+**Latest: Ritemark 2.3.0** (23 November 2026)
 
 | Platform | Download |
 | --- | --- |
-| macOS Apple Silicon (M1/M2/M3) | [Ritemark-arm64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/Ritemark-arm64.dmg) |
-| macOS Intel | [Ritemark-x64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/latest/download/Ritemark-x64.dmg) |
-| Windows | [Ritemark-Setup.exe](https://github.com/jarmo-productory/ritemark-public/releases/download/v1.6.3/Ritemark-Setup.exe) |
+| Mac with Apple silicon (M1 and later) | [Ritemark-arm64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/download/v2.3.0/Ritemark-arm64.dmg) |
+| Mac with Intel | [Ritemark-x64.dmg](https://github.com/jarmo-productory/ritemark-public/releases/download/v2.3.0/Ritemark-x64.dmg) |
+| Windows | [Microsoft Store](https://apps.microsoft.com/detail/xp9k8sp24trnk4), or the installer [Ritemark-Setup.exe](https://github.com/jarmo-productory/ritemark-public/releases/download/v2.3.0/Ritemark-Setup.exe) |
 
-All builds are signed and notarized. See [release notes](https://github.com/jarmo-productory/ritemark-public/releases/latest) for checksums and full changelog.
+Ritemark tells you when a new version is out. A version from the Microsoft Store updates from the Store. Every release and its notes are under [Releases](https://github.com/jarmo-productory/ritemark-public/releases).
 
-[Read more about Ritemark](https://www.ritemark.app)
+## What Ritemark is
 
-* * *
+Your notes, transcripts, sources and drafts sit in one folder. In Ritemark, ChatGPT or Claude work in that folder with you. The AI starts from your whole folder, not from one chat box: it writes the draft, you check it and send it.
 
-## The shift
+Your documents stay plain Markdown files on your computer, and you need no Ritemark account. Ritemark works with any ChatGPT account, Free included, or a paid Claude plan. It is free and open source, for Mac and Windows.
 
-AI agents can work on your documents now. Not just code.
+## New in 2.3: slides
 
-If you're a product manager, consultant, founder, or technical writer, AI agents can transform your workflow. They draft from real project context. Rewrite across multiple files. Translate entire folders. The same agents that developers use for code can now help you write, restructure, and translate documents.
+You can now make slides in Ritemark, present them, and give every participant a page to work through. Write a deck as you write a document, with a handout beside the slides. 2.3 also lets you edit Excel files and keep their look, change pictures yourself or with ChatGPT, and change tables with the mouse. [Read the 2.3 release notes](https://github.com/jarmo-productory/ritemark-public/releases/tag/v2.3.0).
 
-Until now, the tools that run these agents required a terminal. Ritemark changes that. You chat with Claude, Codex, or Gemini visually. No command line, no setup complexity. The agent sees your project files and works with them directly. You write in a visual editor, give directions in plain language, and review every change before it's saved.
+<table>
+  <tr>
+    <td width="50%"><img src="images/readme/ritemark-2.3-task-board.jpg" alt="The Task board: Claude asks which way to go on a payment reminder, a result waits for review, and three tasks are in progress"></td>
+    <td width="50%"><img src="images/readme/ritemark-2.3-powerpoint.jpg" alt="A PowerPoint file read in Ritemark, its slides with speaker notes, and Claude's answer about it beside them"></td>
+  </tr>
+  <tr>
+    <td>The Task board: Claude asks before it decides, and you review what comes back.</td>
+    <td>A PowerPoint file read in Ritemark, with Claude's answer about it.</td>
+  </tr>
+</table>
 
-* * *
+## Help and feedback
 
-## How Ritemark works
-
-**One window. Three panes. Zero context switching.** You write in the center. The agent assists on the right. Your files stay on your drive.
-
-* * *
-
-## Features
-
-### Editor
-
-Visual markdown editing with live preview. Write formatted text, not syntax. Standard `.md` files that any tool reads. Slash commands for headings, lists, tables, code blocks, images, and diagrams. Native Mermaid with a toolbar for copy, download, and full-screen expand. Voice dictation in 50+ languages — fully on-device.
-
-*Screenshot of "/ commands" in editor*
-
-![](./images/1-6-1-editor-slash-command.png)
-
-### AI agents
-
-Three agents in one sidebar. Sign in via browser — no terminal, no CLI install. Switch providers with a dropdown — no lock-in. Plan mode, interactive questions, and full file context built in. Full CLI terminal also built in if you want it.
-
-### Local-first
-
-Files on your hard drive. No cloud, no account, no sync. Full offline support — AI features need their own API connection, but the editor works without it. Your data stays yours.
-
-### Data files
-
-Native support for CSV. View and edit structured data alongside your prose.
-
-### Flows
-
-Chain AI operations into repeatable workflows. Build templates for common writing tasks and run them with one click.
-
-* * *
-
-## Who is it for?
-
-You don't need to code to use AI agents. Product managers, founders, technical writers, and consultants are already using Ritemark to work with AI agents on their real files.
-
--   **Product Managers** — PRDs, specs, roadmaps. Agents pull context from your project files and help you iterate faster.
-    
--   **Founders & Executives** — Strategy docs, investor updates, competitive analysis. The agent reads everything in the folder and drafts from real context.
-    
--   **Technical Writers** — Documentation, API guides, knowledge bases. Agents restructure, translate, and expand drafts without losing formatting.
-    
--   **Consultants** — Client reports, proposals, deliverables. Compile multiple source files into polished outputs.
-    
-
-* * *
-
-## Open source & local-first
-
-**Your files. Your rules.** Ritemark is open source and local-first. Your documents are plain markdown files on your hard drive. No cloud sync, no vendor lock-in, no account required. The code is on GitHub for anyone to inspect.
-
--   **Plain markdown files** — Standard `.md` format. Open them in any editor, any time.
-    
--   **Works offline** — No internet needed to write. AI features need their own API connection.
-    
--   **No account, no tracking** — Download and start writing. We don't know who you are and we like it that way.
-    
--   **Source on GitHub** — Read the code, report issues, contribute. Transparency is the default.
-    
-
-* * *
-
-## Built by
-
-[**Jarmo Tuisk**](https://www.linkedin.com/in/jarmotuisk/) and [**Productory**](https://productory.eu) — an AI training and consulting company based in Estonia.
-
-We've trained 9000+ professionals and worked with 200+ companies on practical AI adoption. Ritemark is the editor we wanted for ourselves: AI-native, local-first, and genuinely pleasant to write in.
-
-Learn more at [ritemark.app](https://ritemark.app).
-
-* * *
-
-## Support
-
--   **Bug reports:** [Open an issue](https://github.com/jarmo-productory/ritemark-public/issues/new?template=bug_report.md)
-    
--   **Feature requests:** [Open an issue](https://github.com/jarmo-productory/ritemark-public/issues/new?template=feature_request.md)
-    
--   **Releases:** [GitHub Releases](https://github.com/jarmo-productory/ritemark-public/releases)
-    
-
-* * *
+- [Getting started](https://github.com/ProductoryHQ/ritemark-native/blob/main/docs/user/getting-started.md) and the [feature guide](https://github.com/ProductoryHQ/ritemark-native/blob/main/docs/user/features/README.md)
+- [Report a problem or ask for a feature](https://github.com/ProductoryHQ/ritemark-native/issues)
 
 ## License
 
-MIT. Use it, fork it, ship it.
-
-* * *
-
-Made in Estonia
+Ritemark is open source under the [MIT licence](https://github.com/ProductoryHQ/ritemark-native/blob/main/LICENSE). Copyright (c) 2024-2026 Productory Services OÜ. The Ritemark name, logos and brand assets are trademarks of Productory Services OÜ.
